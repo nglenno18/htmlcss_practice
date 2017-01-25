@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <title>CSS Styling</title>
+	
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<h1 align="right">Hello, World! <br>
+	<img src="profile1.jpg" width="220" align="center"></h1>
+	<h3 align="right" id="top"><sup>My name is Nolan Glennon, <br> and I am currently unemployed</sup></h3>
+	
+	<style type="text/css">
+		.first-section{
+			color:#0B4C5F;
+			font-size: 125%;
+			background-color:pink;
+			//width:50%;
+			width: 200px;
+			float:right;
+		}
+		.second-section{
+			color:blue;
+			background-color:#F1F5B1;
+			//width:50%;
+			width: 200px;
+			float:left;
+		}
+		.clear-float{
+			clear:both;
+		}
+		.underlined{
+			text-decoration: underline;
+		}
+		.red{
+			color:red;
+		}
+		.large{
+			color:#0B4C5F;
+			font-size: 200%;
+		}
+		#green{
+			color:green;
+		}
+		#within{
+			color:brown;
+		}
+		#box1{
+			color:yellow;
+			background-color: blue;
+			width: 200px;
+			position:relative;
+			left:200px;
+			top:100px;
+		}
+		#box2{
+			color:red;
+			background-color: #CEF6CE;
+			width: 200px;
+			position:relative;
+			left:100px;
+			top:-50px;
+			z-index:1;
+			opacity:.7;
+		}
+		#box3{
+			color:yellow;
+			background-color: blue;
+			width: 200px;
+			position:fixed;
+		}
+		#box4{
+			color:red;
+			background-color: #CEF6CE;
+			width: 200px;
+			position:absolute;
+			left:500px;
+			top:200px;
+		}
+	</style>
+</head>
+<body>
+<hr>
+	<div = class="first-section">
+		<p align="center"><strong>hello moto</strong></p>
+	</div>
+	<div = class="second-section">
+		<p class="large">About Me</p>
+		<h2 class="red">About Me</h2>
+		<h2 id="green" class="large">About Me</h2>
+	</div>
+	<p>This text will appear in the FLOW, of the page. It has no float property</p>
+	
+	<div class="clear-float"></div>
+	<p>Floats were cleared, everything else should be below the two floated boxes</p>
+	<p id="within">This is some Yellow Text. <span class="underlined";>And this text is underlined.</span></p>
+	<hr>
+	
+	<div id="box1">
+		<p>The quick brown fox jumped over the lazy dog</p>
+		<p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+	</div>
+	<div id="box2">
+		<p>The quick brown fox jumped over the lazy dog</p>
+		<p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+	</div>
+	<div id="box3">
+		<p>The quick brown fox jumped over the lazy dog</p>
+		<p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+	</div>
+	<div id="box4">
+		<p>The quick brown fox jumped over the lazy dog</p>
+		<p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+	</div>
+	<hr>
+	<a target="_tab" href="http://html-color-codes.info">Using HTML Color Codes</a>
+</body>
+</html>

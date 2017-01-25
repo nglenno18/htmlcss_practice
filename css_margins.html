@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <title>CSS Styling</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<style type="text/css">
+		.clear-float{
+			clear:both;
+		}
+		.underlined{
+			text-decoration: underline;
+		}
+		.red{
+			color:red;
+		}
+		.large{
+			color:#0B4C5F;
+			font-size: 200%;
+		}
+		#green{
+			color:green;
+		}
+		#within{
+			color:brown;
+		}
+		#first-section{
+			color:yellow;
+			background-color: blue;
+			width: 200px;
+      /*margin: 100px 50px 20px 100px;*/
+      margin-left: 150px;
+      margin-right: 10px;
+      /*float: left;*/
+			/*position:relative;
+			left:100px;*/
+		}
+		#second-section{
+			color:red;
+			background-color: #CEF6CE;
+			width: 200px;
+      margin: 50px 20px;
+		}
+		#box3{
+			color:yellow;
+			background-color: blue;
+			width: 200px;
+			position:fixed;
+		}
+		#box4{
+			color:red;
+			background-color: #CEF6CE;
+			width: 200px;
+			position:absolute;
+			left:500px;
+			top:200px;
+		}
+	</style>
+</head>
+<body>
+  <div id="first-section">
+    <p>The quick brown fox jumped over the lazy dog</p>
+    <p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+  </div>
+  <div id="second-section">
+    <p>The quick brown fox jumped over the lazy dog</p>
+    <p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+  </div>
+
+	<!-- <p>This text will appear in the FLOW, of the page. It has no float property</p> -->
+
+	<div class="clear-float"></div>
+	<p>Floats were cleared, everything else should be below the two floated boxes</p>
+	<p id="within">This is some Yellow Text. <span class="underlined";>And this text is underlined.</span></p>
+	<hr>
+
+
+	<!-- <div id="box3">
+		<p>The quick brown fox jumped over the lazy dog</p>
+		<p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+	</div>
+	<div id="box4">
+		<p>The quick brown fox jumped over the lazy dog</p>
+		<p>Blah blah blah blah, blah blah blah, bla bleeblee bloo blahba</p>
+	</div> -->
+	<hr>
+	<a target="_tab" href="http://html-color-codes.info">Using HTML Color Codes</a>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>CSS Styling</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<style type="text/css">
+		.clear-float{
+			clear:both;
+		}
+		.underlined{
+			text-decoration: underline;
+		}
+		.red{
+			color:red;
+		}
+    .small{font-size: 75%;}
+		.large{
+			color:#0B4C5F;
+			font-size: 200%;
+		}
+		#green{
+			color:green;
+		}
+		#within{
+			color:brown;
+		}
+		#first-section{
+			color:yellow;
+			background-color: blue;
+			width: 200px;
+      margin-left: 150px;
+      margin-right: 10px;
+		}
+		#second-section{
+			color:red;
+			background-color: #CEF6CE;
+			width: 400px;
+      padding: 5px 20px;
+		}
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+	</style>
+</head>
+<body>
+  <div id="first-section">
+    <p>the body class eliminates the margins and padding on the webpage</p>
+    <br>
+    <p>the p class eliminates the auto-margins/padding between elements inside the webpage</p>
+  </div>
+  <div id="second-section">
+    <p>This box is set to 400px</p>
+    <p>The padding is set to 5px on the right/left, 20px on the top/bottom</p>
+    <p><strong>SO the TOTAL width of the box is <em>400px + 10px</em></strong></p>
+  </div>
+
+	<div class="clear-float"></div>
+	<p>Floats were cleared, everything else should be below the two floated boxes</p>
+	<p id="within">This is some Yellow Text. <span class="underlined";>And this text is underlined.</span></p>
+	<hr>
+  <a target="_tab" href="http://html-color-codes.info">Using HTML Color Codes</a><br><br>
+  <a target="_tab" href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=css%20reset">
+    CSS Reset</a><p class=small><em>Resets the default margin/padding
+    <br>Ensures webpage is identical in ALL browsers</em></p>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <title>CSS Styling -- Borders</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<style type="text/css">
+    .clear-float{
+      clear:both;
+    }
+    .big{
+      font-size: 150%;
+    }
+    .link{
+      background-color: lightgrey;
+      width:250px;
+      padding-left: 20px;
+    }
+    .box{
+      width: 300px;
+      background-color: green;
+      opacity: .9;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .bold{
+      font-weight: bold;
+    }
+    .italic{
+      font-style: italic;
+    }
+    .underlined{
+      text-decoration: underline;
+    }
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+      color:green;
+    }
+    .right{
+      text-align:right;
+    }
+    .centered{
+      text-align: center;
+    }
+    .justified{
+      text-align: justify;
+    }
+
+	</style>
+</head>
+<body>
+  <h2>STYLING TEXT</h2>
+  <div class="big">
+    <p class="bold">This is some bold text</p>
+    <p class="italic">This is some ITALIC text</p>
+    <p class="italic">This is some ITALIC text!
+      <span class="bold">And this is BOLD & ITALIC</span></p>
+    <p class="underlined">This text is UNDERLINED!</p>
+  </div>
+  <div class="link">
+    <a target="_tab" href="https://www.w3.org/TR/html401/present/graphics.html">
+      This is a NON-Underlined Link</a>
+      <br>
+    <a target="_tab" href="http://www.w3schools.com/css/css_text.asp">
+      Both Links use the "Hover" Class</a>
+  </div>
+
+  <br><hr><h2>ALIGNING TEXT</h2>
+  <div class="box">
+    <p class="right">Text aligned to the RIGHT of the parent element(DIV tag)</p>
+    <p class="centered">Text CENTERed (DIV tag)</p>
+    <p class="justified">Text is JUSTIFIED. Text is JUSTIFIED. Text is JUSTIFIED.
+    Text is JUSTIFIED. Text is JUSTIFIED. Text is JUSTIFIED. Text is JUSTIFIED.
+    Text is JUSTIFIED. Text is JUSTIFIED. Text is JUSTIFIED.</p>
+    <br>
+    <p class="justified">LOREM IPSUM GENERATED <br> Lorem ipsum dolor sit amet,
+      habemus molestiae te sed. Te modus homero qualisque sit.
+      Pri scripta suscipiantur no, ut vero idque eum, ea deleniti consulatu mea.
+      Labore dictas sit eu, his an aperiri iuvaret appareat.</p>
+  </div>
+  <hr>
+  <p class="right">Text aligned to the RIGHT the BODY TAG</p>
+  <div class="link">
+    <a target="_tab" href="http://generator.lorem-ipsum.info/">
+      Lorem Ipsum</a>
+  </div>
+</body>
+</html>
