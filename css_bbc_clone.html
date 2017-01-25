@@ -181,7 +181,7 @@
        color: #777;
        text-decoration: none;
        /*font-weight: normal;;*/
-       font-size: 40px;
+       font-size: 37px;
      }
      h3 a:hover{
        font-weight: bold;
@@ -189,7 +189,7 @@
      }
      #article-summary{
        color: #5a5a5a;
-       width: 250px;
+       width: 230px;
        float:left;
      }
      #topic-link{
@@ -220,13 +220,13 @@
      }
      #article-container{
        float:left;
-       width:670px;
+       width:640px;
        border-right: 1px solid #CCCCCC;
-       padding-right: 20px;
+       padding-right: 5px;
      }
      #main-image{
-       width: 400px;
-       margin-left: 20px;
+       width: 390px;
+       margin-left: 15px;
      }
      #mainarticle{
        width: 1000px;
@@ -236,9 +236,9 @@
        border-top: 2px solid #BB4545;
        width: 50px;
      }
-     .article-links{
+     /*.article-links{
        font-size: 85% !important;
-     }
+     }*/
      .article-links a{
        color: black !important;
        text-decoration: none !important;
@@ -256,31 +256,57 @@
      }
 
      #watch-listen-container{
-       float: left;
-       margin-left: 20px;
-       width: 200px;
+       float: right;
+       margin-left: 9px;
+       width: 340px;
      }
 
      #watch-listen{
        color: #777;
+       float:left
      }
-     #watch-listen a{
-       color: black;
-       text-decoration: none;
-       font-weight: bold;
-     }
-     #watch-listen a:visited{
+
+     .watch-listen-link:visited{
        font-weight: bold;
        color: #777;
      }
-     #watch-listen p{
-       font-size: 85%;
+     .watch-listen-link:hover{
+       color: #37e;
      }
+     .watch-listen-link{
+       color: black;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 17px;
+     }
+     .watch-listen-date{
+       font-size: 5px;
+     }
+     /*#watch-listen p{
+       font-size: 85%;
+
+     }*/
      #watch-listen hr{
        border-top: 1px solid #CCCCCC;
      }
      .border-right{
        border-right: 1px solid #777;
+     }
+     .article-side-image{
+       float: left;
+       width: 130px;
+       padding-right: 10px;
+     }
+     .article-info{
+       width:200px;
+       float:right;
+     }
+     .watch-article{
+       width: 100%;
+       float:left;
+     }
+     .watch-article p{
+       font-size: 14px;
      }
 
 
@@ -393,26 +419,52 @@
         <div id="watch-listen-container">
           <div id="watch-listen">
             <h4>Watch/Listen</h4>
-            <a href="http://www.bbc.com/news/technology-38651446">Armban controls artificial hand</a>
-            <p><img id="time-icon" src="images/time_icon.png"><span id="date">23 January 2017</span>
-              <a id="topic-link-2" href="http://www.bbc.com/news/technology">Technology</a></p>
+            <div class="watch-article">
+              <img class="article-side-image" src="images/armband.png"></img>
+              <div class="article-info">
+                <a class="watch-listen-link"href="http://www.bbc.com/news/technology-38651446">Armband controls artificial hand</a>
+                <p><img id="time-icon" src="images/time_icon.png"><span id="date">23 January 2017</span>
+                  <a id="topic-link-2" href="http://www.bbc.com/news/technology">Technology</a></p>
+              </div>
+            </div>
 
-            <a href="http://www.bbc.com/news/world-europe-38684643">Putin spokesman denies US election hack</a>
-            <p><img id="time-icon" src="images/time_icon.png"><span id="date">19 January 2017</span>
-              <a id="topic-link-2" href="http://www.bbc.com/news/world/europe">Europe</a></p>
+            <div class="watch-article">
+              <img class="article-side-image" src="images/putin.png"></img>
+              <div class="article-info">
+                <a class="watch-listen-link"href="http://www.bbc.com/news/world-europe-38684643">Putin spokesman denies US election hack</a>
+                <p><img id="time-icon" src="images/time_icon.png"><span id="date">19 January 2017</span>
+                  <a id="topic-link-2" href="http://www.bbc.com/news/world/europe">Europe</a></p>
+              </div>
+            </div>
 
-            <a href="http://www.bbc.com/news/world-europe-38684643">Virtually cycling the length of Britain</a>
-            <p><img id="time-icon" src="images/time_icon.png"><span id="date">23 January 2017</span>
-              <a id="topic-link-2" href="http://www.bbc.com/news/world/scotland">Scotland</a></p>
+            <div class="watch-article">
+              <img class="article-side-image" src="images/cycling.png"></img>
+              <div class="article-info">
+                <a class="watch-listen-link"href="http://www.bbc.com/news/world-europe-38684643">Virtually cycling the length of Britain</a>
+                <p><img id="time-icon" src="images/time_icon.png"><span id="date">23 January 2017</span>
+                  <a id="topic-link-2" href="http://www.bbc.com/news/world/scotland">Scotland</a></p>
+              </div>
+            </div>
 
-            <a href="http://www.bbc.com/news/business-38663672">How to grow a huge tech firm</a>
-            <p><img id="time-icon" src="images/time_icon.png"><span id="date">22 January 2017</span>
-              <a id="topic-link-2" href="http://www.bbc.com/news/business">Business</a></p>
 
-            <a href="http://www.bbc.com/news/technology-38680842">The brain-controlled telepresence robot</a>
-            <p><img id="time-icon" src="images/time_icon.png"><span id="date">20 January 2017</span>
-              <a id="topic-link-2" href="http://www.bbc.com/news/technology">Technology</a></p>
+            <div class="watch-article">
+              <img class="article-side-image" src="images/tech-firm.png"></img>
+              <div class="article-info">
+                <a class="watch-listen-link"href="http://www.bbc.com/news/business-38663672">How to grow a huge tech firm</a>
+                <p><img id="time-icon" src="images/time_icon.png"><span id="date">22 January 2017</span>
+                  <a id="topic-link-2" href="http://www.bbc.com/news/business">Business</a></p>
+              </div>
+            </div>
 
+
+            <div class="watch-article">
+              <img class="article-side-image" src="images/brain.png"></img>
+              <div class="article-info">
+                <a class="watch-listen-link"href="http://www.bbc.com/news/technology-38680842">The brain-controlled telepresence robot</a>
+                <p><img id="time-icon" src="images/time_icon.png"><span id="date">20 January 2017</span>
+                  <a id="topic-link-2" href="http://www.bbc.com/news/technology">Technology</a></p>
+              </div>
+            </div>
           </div>
 
         </div>
